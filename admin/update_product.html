@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/admin_style.css">
+
+    <title>Admin</title>
+</head>
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="#" class="logo">Admin<span>Panel</span></a>
+
+            <nav class="navbar">
+                <a href="../admin/dashboard.html">home</a>
+                <a href="../admin/product.html">products</a>
+                <a href="../admin/placed_orders.html">orders</a>
+                <a href="../admin/admin_accounts.html">admins</a>
+                <a href="#">users</a>
+                <a href="../admin/messages.html">messages</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+            </div>
+
+            <div class="profile">
+                <a href="../admin/update_profile.html" class="btn">update profile</a>
+                <div class="flex-btn">
+                    <a href="../admin/admin_register.html" class="option-btn">register</a>
+                    <a href="../admin/admin_login.html" class="option-btn">login</a>
+                </div>
+                <a href="#" class="delete-btn" onclick="return confirm('Logout Form The Website?');">logout</a>
+            </div>
+        </section>
+    </header>
+
+    <section class="update-product">
+        <h1 class="heading">update product</h1>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="image-container">
+                <div class="main-image">
+                    <img src="../images/watch-1.webp" alt="">
+                </div>
+
+                <div class="sub-image">
+                    <img src="../images/watch-1.webp" alt="">
+                    <img src="../images/watch-2.webp" alt="">
+                    <img src="../images/watch-3.webp" alt="">
+                </div>
+            </div>
+
+            <span>update name</span>
+            <input type="text" name="name" required class="box" maxlength="100" placeholder="Enter product name" value="">
+
+            <span>update price</span>
+            <input type="number" name="price" required class="box" min="0" max="9999999999" placeholder="Enter product price" onkeypress="if(this.value.length == 10) return false;" value="">
+
+            <span>update details</span>
+            <textarea name="details" class="box" required cols="30" rows="10"></textarea>
+
+            <span>update image 01</span>
+            <input type="file" name="image_01" accept="image/jpg, image/jpeg, image/png, image/webp" class="box">
+
+            <span>update image 02</span>
+            <input type="file" name="image_01" accept="image/jpg, image/jpeg, image/png, image/webp" class="box">
+
+            <span>update image 03</span>
+            <input type="file" name="image_01" accept="image/jpg, image/jpeg, image/png, image/webp" class="box">
+
+            <div class="flex-btn">
+                <input type="submit" name="update" class="btn" value="update">
+                <a href="../admin/product.html" class="option-btn">go back</a>
+            </div>
+        </form>
+    </section>
+
+    <script src="../js/admin_script.js"></script>
+</body>
+</html>

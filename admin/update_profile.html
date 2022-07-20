@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/admin_style.css">
+
+    <title>Update Profile</title>
+</head>
+<body>
+    <section class="form-container">
+        <form action="" method="post">
+            <h3>update profile</h3>
+            <input type="text" name="name" required placeholder="Enter your username" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="password" name="old_pass" required placeholder="Enter old password" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="password" name="new_pass" required placeholder="Enter new password" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="password" name="confirm_pass" required placeholder="Confirm new password" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+            <a href="../admin/dashboard.html" class="btn">update now</a>
+        </form>
+    </section>
+</body>
+</html>

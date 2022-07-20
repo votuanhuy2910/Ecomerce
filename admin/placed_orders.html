@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/admin_style.css">
+
+    <title>Orders</title>
+</head>
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="#" class="logo">Admin<span>Panel</span></a>
+
+            <nav class="navbar">
+                <a href="../admin/dashboard.html">home</a>
+                <a href="../admin/product.html">products</a>
+                <a href="../admin/placed_orders.html">orders</a>
+                <a href="../admin/admin_accounts.html">admins</a>
+                <a href="../admin/users_accounts.html">users</a>
+                <a href="../admin/messages.html">messages</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+            </div>
+
+            <div class="profile">
+                <a href="../admin/update_profile.html" class="btn">update profile</a>
+                <div class="flex-btn">
+                    <a href="../admin/admin_register.html" class="option-btn">register</a>
+                    <a href="../admin/admin_login.html" class="option-btn">login</a>
+                </div>
+                <a href="#" class="delete-btn" onclick="return confirm('Logout Form The Website?');">logout</a>
+            </div>
+        </section>
+    </header>
+
+    <div class="orders">
+        <h1 class="heading">placed orders</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <p> placed on : <span>phone store</span></p>
+                <p> name : <span>tuan huy</span></p>
+                <p> number : <span>0786448411</span></p>
+                <p> address : <span>981 HL2</span></p>
+                <p> total products : <span>5</span></p>
+                <p> total price : <span>$500</span></p>
+                <p> payment method : <span>COD</span></p>
+
+                <form action="" method="post">
+                    <input type="hidden" name="order_id" value="">
+                    <select name="payment_status" class="select">
+                        <option selected disabled></option>
+                        <option value="ending">Pending</option>
+                        <option value="completed">Completed</option>
+                    </select>
+
+                    <div class="flex-btn">
+                        <input type="submit" value="update" class="option-btn" name="update_payment">
+                        <a href="../admin/placed_orders.html" class="delete-btn" onclick="return confirm('Delete this order?');">delete</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="box">
+                <p> placed on : <span>phone store</span></p>
+                <p> name : <span>tuan huy</span></p>
+                <p> number : <span>0786448411</span></p>
+                <p> address : <span>981 HL2</span></p>
+                <p> total products : <span>5</span></p>
+                <p> total price : <span>$500</span></p>
+                <p> payment method : <span>JBL</span></p>
+
+                <form action="" method="post">
+                    <input type="hidden" name="order_id" value="">
+                    <select name="payment_status" class="select">
+                        <option selected disabled></option>
+                        <option value="ending">Pending</option>
+                        <option value="completed">Completed</option>
+                    </select>
+
+                    <div class="flex-btn">
+                        <input type="submit" value="update" class="option-btn" name="update_payment">
+                        <a href="../admin/placed_orders.html" class="delete-btn" onclick="return confirm('Delete this order?');">delete</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="box">
+                <p> placed on : <span>phone store</span></p>
+                <p> name : <span>tuan huy</span></p>
+                <p> number : <span>0786448411</span></p>
+                <p> address : <span>981 HL2</span></p>
+                <p> total products : <span>5</span></p>
+                <p> total price : <span>$500</span></p>
+                <p> payment method : <span>PAYPAL</span></p>
+
+                <form action="" method="post">
+                    <input type="hidden" name="order_id" value="">
+                    <select name="payment_status" class="select">
+                        <option selected disabled></option>
+                        <option value="ending">Pending</option>
+                        <option value="completed">Completed</option>
+                    </select>
+
+                    <div class="flex-btn">
+                        <input type="submit" value="update" class="option-btn" name="update_payment">
+                        <a href="../admin/placed_orders.html" class="delete-btn" onclick="return confirm('Delete this order?');">delete</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/admin_script.js"></script>
+</body>
+</html>

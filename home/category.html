@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        .footer .grid .box .none {
+            text-transform: none;
+        }
+    </style>
+
+    <title>Category</title>
+</head>
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="./home.html" class="logo">PhoneStore</a>
+
+            <nav class="navbar">
+                <a href="./home.html">home</a>
+                <a href="./about.html">about</a>
+                <a href="./orders.html">order</a>
+                <a href="./shop.html">shop</a>
+                <a href="./contact.html">contact</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+
+                <a href="./search.page.html"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-heart"></i><span>(0)</span></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i><span>(0)</span></a>
+                
+                <div id="user-btn" class="fas fa-user"></div>
+            </div>
+
+            <div class="profile">
+                <a href="./update_user.html" class="btn">update profile</a>
+                <!-- <div class="flex-btn">
+                    <a href="/user_register.html" class="option-btn">register</a>
+                    <a href="/user_login.html" class="option-btn">login</a>
+                </div> -->
+                <a href="/index.html" class="delete-btn" onclick="return confirm('Logout Form The Website?');">logout</a>
+            </div>
+        </section>
+    </header>
+
+    <section class="products">
+        <h1 class="heading">category</h1>
+
+        <div class="box-container">
+            <form action="" method="post" class="box">
+                <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/camera-1.webp" alt="">
+                <div class="name">camera</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>100<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </form>
+
+            <form action="" method="post" class="box">
+                <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/laptop-1.webp" alt="">
+                <div class="name">laptop</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>100<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </form>
+
+            <form action="" method="post" class="box">
+                <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/fridge-1.webp" alt="">
+                <div class="name">fridge</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>100<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </form>
+
+            <form action="" method="post" class="box">
+                <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/mixer-1.webp" alt="">
+                <div class="name">mixer</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>100<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </form>
+
+            <form action="" method="post" class="box">
+                <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/mouse-1.webp" alt="">
+                <div class="name">mouse</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>100<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </form>
+
+            <form action="" method="post" class="box">
+                <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="/images/tv-01.webp" alt="">
+                <div class="name">tv</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>100<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <section class="grid">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="./home.html"><i class="fas fa-angle-right"></i> home</a>
+                <a href="./about.html"><i class="fas fa-angle-right"></i> about</a>
+                <a href="./shop.html"><i class="fas fa-angle-right"></i> shop</a>
+                <a href="./contact.html"><i class="fas fa-angle-right"></i> contact</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="/user_login.html"><i class="fas fa-angle-right"></i> login</a>
+                <a href="/user_register.html"><i class="fas fa-angle-right"></i> register</a>
+                <a href=""><i class="fas fa-angle-right"></i> cart</a>
+                <a href="/orders.html"><i class="fas fa-angle-right"></i> orders</a>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <a href=""><i class="fas fa-phone"></i> +123 456 7899</a>
+                <a href=""><i class="fas fa-phone"></i> +111 222 3333</a>
+                <a href="mailto:votuanhuy@gmail.com" class="none"><i class="fas fa-envelope"></i> votuanhuy@gmail.com</a>
+                <a href="https://hcmue.edu.vn/vi/"><i class="fas fa-map-marker-alt"></i> An Duong Vuong, Q5</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href=""><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href=""><i class="fab fa-twitter"></i> twitter</a>
+                <a href=""><i class="fab fa-instagram"></i> instagram</a>
+                <a href=""><i class="fab fa-linkedin"></i> linkedin</a>
+            </div>
+        </section>
+
+        <div class="credit">&copy; copyright @ 2022 by <span>Vo Tuan Huy</span> | all rights reserved!</div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

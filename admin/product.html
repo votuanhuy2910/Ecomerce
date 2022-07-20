@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/admin_style.css">
+
+    <title>Product</title>
+</head>
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="#" class="logo">Admin<span>Panel</span></a>
+
+            <nav class="navbar">
+                <a href="../admin/dashboard.html">home</a>
+                <a href="../admin/product.html">products</a>
+                <a href="../admin/placed_orders.html">orders</a>
+                <a href="../admin/admin_accounts.html">admins</a>
+                <a href="../admin/users_accounts.html">users</a>
+                <a href="../admin/messages.html">messages</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+            </div>
+
+            <div class="profile">
+                <!-- <?php 
+                    $select_profile = $conn->prepare("SELECT * FROM `admins` WHERE id = ?");
+                    $select_profile->execute([$admin_id]);
+                    $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+                ?>
+                <p>
+                    <?=$fetch_profile['name']; ?>
+                </p> -->
+
+                <a href="../admin/update_profile.html" class="btn">update profile</a>
+                <div class="flex-btn">
+                    <a href="../admin/admin_register.html" class="option-btn">register</a>
+                    <a href="../admin/admin_login.html" class="option-btn">login</a>
+                </div>
+                <a href="#" class="delete-btn" onclick="return confirm('Logout Form The Website?');">logout</a>
+            </div>
+        </section>
+    </header>
+
+    <section class="add-products">
+        <h1 class="heading">add product</h1>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="flex">
+                <div class="inputBox">
+                    <span>product name (required)</span>
+                    <input type="text" class="box" required maxlength="100" placeholder="Enter product name" name="name">
+                </div>
+
+                <div class="inputBox">
+                    <span>product price (required)</span>
+                    <input type="text" class="box" required max="9999999999" placeholder="Enter product price" onkeypress="if(this.value.length == 10) return false;" name="price">
+                </div>
+
+                <div class="inputBox">
+                    <span>image 01 (required)</span>
+                    <input type="file" accept="image/jpg, image/jpeg, image/png, image/webp" name="image_01" class="box" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>image 02 (required)</span>
+                    <input type="file" accept="image/jpg, image/jpeg, image/png, image/webp" name="image_02" class="box" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>image 03 (required)</span>
+                    <input type="file" accept="image/jpg, image/jpeg, image/png, image/webp" name="image_03" class="box" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>product details (required)</span>
+                    <textarea name="details" placeholder="Enter product details" class="box" required maxlength="500" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="add product" class="btn" name="add_product">
+        </form>
+    </section>
+
+    <div class="show-products">
+        <h1 class="heading">products added</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="../images/watch-1.webp" alt="">
+                <div class="name">watch</div>
+                <div class="price">$100/-</div>
+                <div class="details">waterproof</div>
+                <div class="flex-btn">
+                    <a href="../admin/update_product.html" class="option-btn">update</a>
+                    <a href="#" class="delete-btn" onclick="return confirm('Delete this product?');">delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/admin_script.js"></script>
+</body>
+</html>
