@@ -14,7 +14,7 @@
         }
     </style>
 
-    <title>Home</title>
+    <title>Wishlist</title>
 </head>
 <body>
     <header class="header">
@@ -42,24 +42,36 @@
             <div class="profile">
                 <p>Please login or register first!</p>
                 <div class="flex-btn">
-                    <a href="./user_register.html" class="option-btn">register</a>
-                    <a href="./user_login.html" class="option-btn">login</a>
+                    <a href="/user_register.html" class="option-btn">register</a>
+                    <a href="/user_login.html" class="option-btn">login</a>
                 </div>
             </div>
         </section>
     </header>
 
-    <section class="form-container">
-        <form action="" method="post">
-            <h3>register now</h3>
-            <input type="text" name="name" required placeholder="Enter your username" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-            <input type="email" name="email" required placeholder="Enter your email" maxlength="50" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-            <input type="password" name="pass" required placeholder="Enter your password" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-            <input type="password" name="pass" required placeholder="Confirm your password" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-            <a href="./user_login.html" class="option-btn">register now</a>
-            <p>Already have an account?</p>
-            <a href="./user_login.html" class="btn">login now</a>
-        </form>
+    <section class="products">
+        <h3 class="heading">your wishlist</h3>
+
+        <div class="box-container">
+            <!-- <form action="" method="post" class="box">
+                <a href="/quick_view.html" class="fas fa-eye"></a>
+                <img src="/images/camera-1.webp" alt="">
+                <div class="name">camera</div>
+                <div class="flex">
+                    <div class="price">$100/-</div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                </div>
+                <a href="" class="btn">add to cart</a>
+                <a href="" class="delete-btn" onclick="return confirm('Delete this from wishlist?');">delete to cart</a>
+            </form> -->
+            <p class="empty">please login to see wishlist!</p>
+        </div>
+
+        <!-- <div class="wishlist-total">
+            <p>grand total : <span>$100/-</span></p>
+            <a href="/shop.html" class="option-btn">continue shopping</a>
+            <a href="/wishlist.html" class="delete-btn" onclick="return confirm('Delete all from wishlist?');">delete all item</a>
+        </div> -->
     </section>
 
     <footer class="footer">

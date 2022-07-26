@@ -14,7 +14,7 @@
         }
     </style>
 
-    <title>Contact</title>
+    <title>Checkout</title>
 </head>
 <body>
     <header class="header">
@@ -50,14 +50,69 @@
         </section>
     </header>
 
-    <section class="contact">
+    <section class="checkout-orders">
         <form action="" method="post">
-            <h3>get in touch</h3>
-            <input type="text" name="name" required placeholder="Enter your name" maxlength="20" class="box">
-            <input type="email" name="email" required placeholder="Enter your email" maxlength="50" class="box">
-            <input type="number" name="number" required placeholder="Enter your number" min="0" max="9999999999" class="box" onkeypress="if(this.value.length == 10) return false;">
-            <textarea name="msg" cols="30" rows="10" class="box" placeholder="Enter your message"></textarea>
-            <input type="submit" value="send message" name="send" class="btn">
+            <h3>your orders</h3>
+
+            <div class="display-orders">
+                <p>camera <span>($100</span><span>/- x 1)</span></p>
+                <div class="grand-total">grand total : <span>$100/-</span></div>
+            </div>
+
+            <h3>place your orders</h3>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>your name : </span>
+                    <input type="text" name="name" placeholder="Enter your name" class="box" maxlength="20" required>
+                </div>
+                <div class="inputBox">
+                    <span>your number : </span>
+                    <input type="number" name="number" placeholder="Enter your number" class="box" min="0" max="999999999" onkeypress="if(this.value.length == 10) return false;" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>your email : </span>
+                    <select name="method" class="box" required>
+                        <option value="cash on delivery">cash on delivery</option>
+                        <option value="credit card">credit card</option>
+                        <option value="atm">ATM/option>
+                        <option value="paypal">PAYPAL</option>
+                    </select>
+                </div>
+
+                <div class="inputBox">
+                    <span>address line 01 : </span>
+                    <input type="text" name="flat" placeholder="e.g. flat number" class="box" maxlength="50" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>address line 02 : </span>
+                    <input type="text" name="street" placeholder="e.g. street name" class="box" maxlength="50" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>province : </span>
+                    <input type="text" name="province" placeholder="e.g. QUAN 1" class="box" maxlength="50" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>city : </span>
+                    <input type="text" name="city" placeholder="e.g. HO CHI MINH" class="box" maxlength="50" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>country : </span>
+                    <input type="text" name="country" placeholder="e.g. VIETNAM" class="box" maxlength="50" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>pin code : </span>
+                    <input type="number" min="0" name="pin_code" placeholder="e.g. 70000" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
+                </div>
+            </div>
+
+            <a href="" class="btn"> place order</a>
         </form>
     </section>
 
@@ -75,7 +130,7 @@
                 <h3>extra links</h3>
                 <a href="./user_login.html"><i class="fas fa-angle-right"></i> login</a>
                 <a href="./user_register.html"><i class="fas fa-angle-right"></i> register</a>
-                <a href="./cart.html"><i class="fas fa-angle-right"></i> cart</a>
+                <a href="./cart.htm"><i class="fas fa-angle-right"></i> cart</a>
                 <a href="./orders.html"><i class="fas fa-angle-right"></i> orders</a>
             </div>
 
@@ -99,6 +154,6 @@
         <div class="credit">&copy; copyright @ 2022 by <span>Vo Tuan Huy</span> | all rights reserved!</div>
     </footer>
 
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

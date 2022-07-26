@@ -14,7 +14,7 @@
         }
     </style>
 
-    <title>Home</title>
+    <title>Quick View</title>
 </head>
 <body>
     <header class="header">
@@ -42,23 +42,40 @@
             <div class="profile">
                 <p>Please login or register first!</p>
                 <div class="flex-btn">
-                    <a href="./user_register.html" class="option-btn">register</a>
-                    <a href="./user_login.html" class="option-btn">login</a>
+                    <a href="/user_register.html" class="option-btn">register</a>
+                    <a href="/user_login.html" class="option-btn">login</a>
                 </div>
             </div>
         </section>
     </header>
 
-    <section class="form-container">
-        <form action="" method="post">
-            <h3>register now</h3>
-            <input type="text" name="name" required placeholder="Enter your username" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-            <input type="email" name="email" required placeholder="Enter your email" maxlength="50" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-            <input type="password" name="pass" required placeholder="Enter your password" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-            <input type="password" name="pass" required placeholder="Confirm your password" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-            <a href="./user_login.html" class="option-btn">register now</a>
-            <p>Already have an account?</p>
-            <a href="./user_login.html" class="btn">login now</a>
+    <section class="quick-view">
+        <h1 class="heading">quick view</h1>
+        <form action="" method="post" class="box">
+            <div class="row">
+                <div class="image-container">
+                    <div class="main-image">
+                        <img src="/images/camera-1.webp" alt="">
+                    </div>
+                    <div class="sub-image">
+                        <img src="/images/camera-1.webp" alt="">
+                        <img src="/images/camera-2.webp" alt="">
+                        <img src="/images/camera-3.webp" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="name">camera</div>
+                    <div class="flex">
+                        <div class="price"><span>$</span>100<span>/-</span></div>
+                        <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                    </div>
+                    <div class="details">good</div>
+                    <div class="flex-btn">
+                        <a href="/cart.html" class="btn">add to cart</a>
+                        <a href="/wishlist.html" class="option-btn">add to wishlist</a>
+                    </div>
+                </div>
+            </div>
         </form>
     </section>
 

@@ -14,7 +14,7 @@
         }
     </style>
 
-    <title>Contact</title>
+    <title>Cart</title>
 </head>
 <body>
     <header class="header">
@@ -50,22 +50,37 @@
         </section>
     </header>
 
-    <section class="contact">
-        <form action="" method="post">
-            <h3>get in touch</h3>
-            <input type="text" name="name" required placeholder="Enter your name" maxlength="20" class="box">
-            <input type="email" name="email" required placeholder="Enter your email" maxlength="50" class="box">
-            <input type="number" name="number" required placeholder="Enter your number" min="0" max="9999999999" class="box" onkeypress="if(this.value.length == 10) return false;">
-            <textarea name="msg" cols="30" rows="10" class="box" placeholder="Enter your message"></textarea>
-            <input type="submit" value="send message" name="send" class="btn">
-        </form>
+    <section class="products shopping-cart">
+        <h3 class="heading">shopping cart</h3>
+        <div class="box-container">
+            <form action="" method="post" class="box">
+                <a href="./quick_view.html" class="fas fa-eye"></a>
+                <img src="/images/camera-1.webp" alt="">
+                <div class="name">camera</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>100<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.length.value == 2) return false;" value="1">
+                    <button type="submit" class="fas fa-edit" onclick="return confirm('Cart quality update!');"></button>
+                </div>
+                <div class="sub-total">sub total : <span>$100</span><span>/-</span></div>
+                <a href="" class="delete-btn" onclick="return confirm('Delete this from cart?');">delete item</a>
+            </form>
+            <!-- <p class="empty">please login to see cart!</p> -->
+        </div>
+
+        <div class="cart-total">
+            <p> grand total : <span>$100</span><span>/-</span></p>
+            <a href="./shop.html" class="option-btn">continue shopping</a>
+            <a href="./cart.html" class="delete-btn" onclick="return confirm('Delete all from cart?');">delete all item</a>
+            <a href="./checkout.html" class="btn">proceed to checkout</a>
+        </div>
     </section>
 
     <footer class="footer">
         <section class="grid">
             <div class="box">
                 <h3>quick links</h3>
-                <a href="./home.html"><i class="fas fa-angle-right"></i> home</a>
+                <a href="./index.html"><i class="fas fa-angle-right"></i> home</a>
                 <a href="./about.html"><i class="fas fa-angle-right"></i> about</a>
                 <a href="./shop.html"><i class="fas fa-angle-right"></i> shop</a>
                 <a href="./contact.html"><i class="fas fa-angle-right"></i> contact</a>
@@ -89,16 +104,16 @@
 
             <div class="box">
                 <h3>follow us</h3>
-                <a href=""><i class="fab fa-facebook-f"></i> facebook</a>
-                <a href=""><i class="fab fa-twitter"></i> twitter</a>
-                <a href=""><i class="fab fa-instagram"></i> instagram</a>
-                <a href=""><i class="fab fa-linkedin"></i> linkedin</a>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
             </div>
         </section>
 
         <div class="credit">&copy; copyright @ 2022 by <span>Vo Tuan Huy</span> | all rights reserved!</div>
     </footer>
 
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
